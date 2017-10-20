@@ -1,0 +1,10 @@
+div#log {
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    border: 3px solid #333333;
+    border-radius: 7px;
+}
+div#send-crtls {
+    margin: 30px auto;
+}
