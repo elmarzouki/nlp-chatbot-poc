@@ -26,9 +26,9 @@ python manage.py runserver
 # create superuser
 python manage.py createsuperuser
 ```
-## testing the parser on desktop
+## testing the parser using CLI
 ```
 cd helper/
-# test nlp parsing
+# test nlp parser logic
 python parser.py
 ```
