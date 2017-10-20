@@ -4,27 +4,29 @@ import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class HttpService {
-	private baseUrl: string = 'http://127.0.0.1:8000';
 
-  	constructor(private http: Http) { }
+  private baseUrl: String = 'http://127.0.0.1:8000';
 
-	public getAll() {
-	  	return this.http.get(`${this.baseUrl}/users`, {headers: this.getHeaders()})
-	  	.map((response: any) => response.json())
-	  	.catch(this.handelError);;
-	}
+  constructor(private http: Http) { }
 
-	private getHeaders(){
-	    // I included these headers because otherwise FireFox
-	    // will request text/html instead of application/json
-	    let headers = new Headers();
-	    headers.append('Accept', 'application/json');
-	    return headers;
-	}
+  public getAll() {
+    return this.http.get(`${this.baseUrl}/users`, {headers: this.getHeaders()})
+    .map((response: any) => response.json())
+    .catch(this.handelError);
+  }
+
+  private getHeaders() {
+    // I included these headers because otherwise FireFox
+    // will request text/html instead of application/json
+    let headers = new Headers();
+    headers.append('Accept', 'application/json');
+    return headers;
+  }
 
 
-  	private handelError(error: any) {
-  		console.log("An error occurred", error);
-  		return Observable.throw(error.json());
-  	}
+  private handelError(error: any) {
+    console.log('An error occurred', error);
+    return Observable.throw(error.json());
+  }
+
 }
