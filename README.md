@@ -48,3 +48,11 @@ cd helper/
 # test nlp parser logic
 python parser.py
 ```
+
+## References:
+- [elitedatascience.com](https://elitedatascience.com/python-nlp-libraries)
+- [spacy.io](https://spacy.io/docs/usage/models)
+- [djangoproject.com](https://www.djangoproject.com/)
+- [django-rest-framework.org](http://www.django-rest-framework.org)
+- [angular.io](https://cli.angular.io/)
+
