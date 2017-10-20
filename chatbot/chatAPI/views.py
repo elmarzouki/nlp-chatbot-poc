@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
+from rest_framework.views import APIView
 from chatAPI.serializers import UserSerializer, GroupSerializer
+
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -17,3 +19,10 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+
+# class Message(APIView):
+#     def get(self, request, message, format=None):
+
+
+

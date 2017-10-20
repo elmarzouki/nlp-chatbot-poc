@@ -1,3 +1,5 @@
 Django==1.11.4
 djangorestframework==3.4.0
 django-cors-headers==1.1.0
+numpy===1.13.3
+spacy===1.9.0

@@ -1,5 +1,5 @@
 # nlp-chatbot-poc
-simple chatbot using natural language processing
+simple chatbot using natural language processing "spaCy"
 ## Setup
 
 Create virtual environment, install dependencies and run migrations to setup the app:
@@ -25,4 +25,9 @@ cd chatbox/
 python manage.py runserver
 # create superuser
 python manage.py createsuperuser
+```
+## testing the parser on desktop
+```
+cd helper/
+python parser.py
 ```
