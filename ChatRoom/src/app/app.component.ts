@@ -22,5 +22,5 @@ export class AppComponent implements OnInit {
         this.error = error.detail;
       }
     );
-}
+  }
 }
