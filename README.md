@@ -1,5 +1,12 @@
 # nlp-chatbot-poc
-simple chatbot using natural language processing "spaCy"
+Simple chat bot using natural language processing.
+
+## Technologies used:
++ Django.
++ django-restframework
++ Angular2
++ spaCy
+
 ## Setup
 
 Create virtual environment, install dependencies and run migrations to setup the app:
@@ -26,6 +33,15 @@ python manage.py runserver
 # create superuser
 python manage.py createsuperuser
 ```
+
+
+Start the client app:
+
+```
+cd ChatRoom
+ng serve
+```
+
 ## testing the parser using CLI
 ```
 cd helper/
