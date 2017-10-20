@@ -29,5 +29,6 @@ python manage.py createsuperuser
 ## testing the parser on desktop
 ```
 cd helper/
+# test nlp parsing
 python parser.py
 ```

@@ -80,4 +80,6 @@ def parse_message(message):
     message_content_messy_data(parsedData)
 
 # dump
-parse_message("he and his brother shot me and my sister")
+input_message = "he and his brother shot me and my sister"
+print("input_message: " + input_message)
+parse_message(input_message)
